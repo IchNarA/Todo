@@ -1,0 +1,177 @@
+*{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.container{
+    background-color:bisque;
+    width:100%;
+    min-height: 100vh;
+    padding:10px;
+}
+
+.list{
+    background-color: white;
+    width: 100%;
+    max-width: 600px;
+    margin: 150px auto 15px auto;
+    border-radius: 10px;
+    padding: 10px 15px;
+
+}
+
+.list h2{
+    display: flex;
+    align-items: center;
+    color: black;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.list-body form{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
+    border-radius:10px;
+    background-color: silver;
+    margin-bottom: 20px;
+}
+
+.list-body form input[type="text"]{
+    flex:1;
+    border:none;
+    outline: none;
+    background-color: transparent;
+    font-size: 14px;
+    padding:10px;
+}
+
+.list-body form input[type="submit"]{
+    border:none;
+    outline: none;
+    background-color: hsl(39, 100%, 50%);
+    font-size: 15px;
+    color:white;
+    cursor: pointer;
+    border-radius:30px;
+    padding:16px 50px;
+}
+
+.list-body form input[type="submit"]:hover{
+    background-color: hsl(39, 100%, 60%);
+}
+
+.list-body form input[type="submit"]:active{
+    background-color: hsl(39, 100%, 70%);
+}
+
+
+ul li{
+    list-style: none;
+    padding: 15px 8px 12px 50px;
+    font-size: 18px;
+    user-select: none;
+    cursor:pointer;
+    position: relative;
+}
+
+ul li span{
+    position:absolute;
+    right:0;
+    top:5px;
+    width: 40px;
+    height: 40px;
+    color:#555;
+    line-height: 40px;
+    text-align: center;
+    border-radius:50px;
+}
+
+ul li span:hover {
+    background: #edeef0;
+}
+
+ul li.checked{
+    color: #5555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(images/checked.png);
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left:12px;
+}
+
+.list .register-body form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20px;
+    border-radius:10px;
+    background-color: silver;
+    margin-bottom: 20px;
+}
+
+.register-body form input[type="text"],[type="password"],[type="email"]{
+    border-radius:10px;
+    padding:10px;
+    margin-bottom: 10px;
+    font-size:14px;
+}
+
+.register-body form input[type="submit"]{
+    border:none;
+    outline: none;
+    background-color: hsl(39, 100%, 50%);
+    font-size: 15px;
+    color:white;
+    cursor: pointer;
+    border-radius:30px;
+    padding:16px 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.register-body form input[type="submit"]:hover{
+    background-color: hsl(39, 100%, 60%);
+}
+
+.register-body form input[type="submit"]:active{
+    background-color: hsl(39, 100%, 70%);
+}
+
+.list a{
+    text-decoration: none;
+    color: black;
+}
+
+.list a:hover{
+    text-decoration: underline;
+}
+
+.list a:active{
+    color:blue;
+}
+
+.container a{
+    display:flex;
+    text-decoration: none;
+    color: black;
+    font-size:20px;
+    justify-content: end;
+    margin-right: 50px;
+    font-weight: bold;
+}
+
